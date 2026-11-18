@@ -312,6 +312,53 @@
         </div>
       </div>
     </section>
+    
+    
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <span>Contact</span>
+          <h2>Get in Touch</h2>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-5" data-aos="fade-up">
+            <div class="info-card"><i class="bi bi-geo-alt"></i><div><h4>School Address</h4>
+              <p>Kabankalan City, Negros Occidental<br><span class="ph-tag">Placeholder</span> [Add full street address]</p></div></div>
+            <div class="info-card"><i class="bi bi-telephone"></i><div><h4>Contact Number</h4>
+              <p><span class="ph-tag">Placeholder</span> [Add official contact number]</p></div></div>
+            <div class="info-card"><i class="bi bi-envelope"></i><div><h4>Official Email</h4>
+              <p><span class="ph-tag">Placeholder</span> [Add official email address]</p></div></div>
+            <div class="info-card"><i class="bi bi-facebook"></i><div><h4>Facebook Page</h4>
+              <!-- REPLACE: put the official KCC Facebook page URL in the href. -->
+              <p><a href="https://www.facebook.com/" target="_blank" rel="noopener">Official Facebook page</a> <span class="ph-tag">Replace link</span></p></div></div>
+            <div class="map-wrap">
+              <!-- REPLACE: verify the pin, then paste the official Google Maps embed link. -->
+              <iframe title="Map of Kabankalan Catholic College" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Kabankalan+Catholic+College,+Kabankalan+City,+Negros+Occidental&output=embed"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <form id="inquiryForm" class="form-box" action="#" method="post">
+              <h3 class="h4 mb-1">Admission Inquiry</h3>
+              <p class="mb-4 small text-muted">Demo form: it does not send messages until connected to a form service.</p>
+              <div class="row gy-3">
+                <div class="col-md-6"><label for="name" class="form-label">Full name</label><input type="text" id="name" class="form-control" required></div>
+                <div class="col-md-6"><label for="email" class="form-label">Email</label><input type="email" id="email" class="form-control" required></div>
+                <div class="col-12"><label for="level" class="form-label">Level of interest</label>
+                  <select id="level" class="form-select"><option>Senior High School</option><option>College</option><option>Other / Not sure</option></select></div>
+                <div class="col-12"><label for="message" class="form-label">Message</label><textarea id="message" rows="5" class="form-control" required></textarea></div>
+                <div class="col-12">
+                  <div id="formMsg" class="alert alert-success d-none" role="status">Thank you! Your inquiry was recorded (demo only).</div>
+                  <button type="submit" class="btn-kcc w-100">Send Inquiry</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
   </main>

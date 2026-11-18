@@ -60,4 +60,15 @@
     });
   }
 
+  
+  /* Demo inquiry form: shows a thank-you message (nothing is sent) */
+  const form = document.getElementById("inquiryForm");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("formMsg").classList.remove("d-none");
+      form.reset();
+    });
+  }
+
 })();
