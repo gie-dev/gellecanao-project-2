@@ -197,3 +197,29 @@ img { max-width: 100%; }
 .map-wrap iframe { display: block; width: 100%; height: 260px; border: 0; }
 .form-box { background: #fff; padding: 30px; border-radius: 8px; border-top: 4px solid var(--royal); box-shadow: 0 8px 28px rgba(16,42,67,.1); }
 .form-box .form-control:focus, .form-box .form-select:focus { border-color: var(--royal); box-shadow: 0 0 0 .2rem rgba(23,74,139,.15); }
+
+
+/* =========================================================
+   8. Footer, back-to-top and accessibility
+   ========================================================= */
+.site-footer { background: #0a1c2e; color: rgba(255,255,255,.78); font-size: 15px; padding: 64px 0 0; border-top: 4px solid var(--gold); }
+.f-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.f-brand img { width: 64px; height: auto; }
+.f-brand strong { font-family: var(--font-heading); color: #fff; font-size: 19px; line-height: 1.2; }
+.site-footer h4 { color: var(--gold); font-family: var(--font-ui); font-size: 15px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; }
+.site-footer ul { list-style: none; padding: 0; margin: 0; }
+.site-footer li { padding: 5px 0; }
+.site-footer a { color: rgba(255,255,255,.78); }
+.site-footer a:hover { color: var(--gold); }
+.social a { display: inline-grid; place-items: center; width: 38px; height: 38px; margin-right: 8px; border-radius: 50%; border: 1px solid rgba(255,255,255,.3); transition: .3s; }
+.social a:hover { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+.copyright { margin-top: 44px; padding: 20px 0; border-top: 1px solid rgba(255,255,255,.12); text-align: center; font-size: 13px; }
+.copyright small { display: block; margin-top: 4px; opacity: .65; }
+
+.scroll-top { position: fixed; right: 18px; bottom: 18px; z-index: 999; width: 44px; height: 44px; border-radius: 50%;
+  background: var(--gold); color: var(--navy); display: grid; place-items: center; font-size: 26px;
+  opacity: 0; visibility: hidden; transition: .3s; }
+.scroll-top.show { opacity: 1; visibility: visible; }
+.scroll-top:hover { background: var(--gold-dark); color: #fff; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation-duration: .01ms !important; scroll-behavior: auto !important; } }

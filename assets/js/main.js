@@ -71,4 +71,18 @@
     });
   }
 
+  
+  /* Back-to-top button: show after scrolling down */
+  const scrollTop = document.getElementById("scrollTop");
+  function toggleScrollTop() {
+    if (scrollTop) scrollTop.classList.toggle("show", window.scrollY > 400);
+  }
+  window.addEventListener("scroll", toggleScrollTop);
+  window.addEventListener("load", toggleScrollTop);
+
+  /* Footer year */
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+
+
 })();
