@@ -116,3 +116,28 @@ img { max-width: 100%; }
 .col-md-3:last-child .fact { border-right: 0; }
 .fact strong { display: block; font-family: var(--font-heading); font-size: 26px; color: var(--gold); }
 .fact span { font-size: 13px; letter-spacing: .5px; opacity: .85; }
+
+
+/* =========================================================
+   4. About and Academics
+   ========================================================= */
+.about-img { position: relative; }
+.about-img img { border-radius: 8px; box-shadow: 0 18px 40px rgba(16,42,67,.2); position: relative; z-index: 1; }
+.about-img::after { content: ""; position: absolute; right: -14px; bottom: -14px; width: 55%; height: 55%; border: 4px solid var(--gold); border-radius: 8px; }
+.vm-card { background: #fff; border: 1px solid #e3e9f0; border-top: 4px solid var(--gold); border-radius: 6px; padding: 22px; height: 100%; transition: .3s; }
+.vm-card:hover { box-shadow: 0 12px 28px rgba(16,42,67,.12); transform: translateY(-4px); }
+.vm-card i { font-size: 28px; color: var(--royal); }
+.vm-card h4 { font-size: 20px; margin: 8px 0; }
+.vm-card p { font-size: 14px; color: #5a6877; margin: 0 0 10px; }
+
+.program-card { background: #fff; border-radius: 8px; overflow: hidden; height: 100%; display: flex; flex-direction: column; box-shadow: 0 6px 22px rgba(16,42,67,.08); transition: .3s; }
+.program-card:hover { transform: translateY(-6px); box-shadow: 0 16px 34px rgba(16,42,67,.16); }
+.program-card .img-wrap { overflow: hidden; }
+.program-card img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: .5s; }
+.program-card:hover img { transform: scale(1.06); }
+.program-card .body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+.program-card h3 { font-size: 22px; margin: 10px 0; }
+.program-card p { font-size: 15px; flex: 1; }
+.learn-more { font-family: var(--font-ui); font-weight: 600; font-size: 14px; }
+.learn-more i { margin-left: 4px; transition: margin .3s; }
+.learn-more:hover i { margin-left: 10px; }
