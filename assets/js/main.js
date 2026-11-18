@@ -43,4 +43,10 @@
     });
   });
 
+  
+  /* Campus Life image lightbox (GLightbox library) */
+  if (window.GLightbox) {
+    GLightbox({ selector: ".glightbox" });
+  }
+
 })();
