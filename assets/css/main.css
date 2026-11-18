@@ -161,3 +161,25 @@ img { max-width: 100%; }
 .campus-tile .cap span { color: var(--gold); font-size: 13px; }
 .campus-tile.tall { min-height: 460px; }
 @media (max-width: 767px) { .campus-tile.tall { min-height: 240px; } }
+
+
+/* =========================================================
+   6. News & Events and Admissions
+   ========================================================= */
+.news-swiper { padding-bottom: 48px; }
+.news-swiper .swiper-slide { height: auto; }
+.news-swiper .swiper-pagination-bullet-active { background: var(--royal); }
+.news-card { background: #fff; border-radius: 8px; overflow: hidden; height: 100%; box-shadow: 0 6px 22px rgba(16,42,67,.08); }
+.news-card img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.news-card .body { padding: 22px; }
+.news-card .date { font-size: 13px; font-weight: 600; color: var(--royal); }
+.news-card h3 { font-size: 20px; margin: 8px 0; }
+.news-card p { font-size: 15px; }
+
+.admissions { text-align: center; color: #fff;
+  background: linear-gradient(rgba(16,42,67,.9), rgba(23,74,139,.88)), url(../img/hero-bg.jpg) center / cover fixed; }
+.admissions h2 { color: #fff; font-size: 46px; }
+.admissions h2 span { color: var(--gold); }
+.admissions p { max-width: 640px; margin: 14px auto 0; font-size: 18px; color: rgba(255,255,255,.9); }
+.admissions .info-box { max-width: 640px; margin: 32px auto 0; padding: 18px 22px; border: 1px dashed var(--gold); border-radius: 8px; background: rgba(255,255,255,.07); font-size: 15px; }
+@media (max-width: 767px) { .admissions h2 { font-size: 32px; } .admissions { background-attachment: scroll; } }

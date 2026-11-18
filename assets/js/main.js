@@ -49,4 +49,15 @@
     GLightbox({ selector: ".glightbox" });
   }
 
+  
+  /* News & Events slider (Swiper library) */
+  if (window.Swiper && document.querySelector(".news-swiper")) {
+    new Swiper(".news-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      pagination: { el: ".swiper-pagination", clickable: true },
+      breakpoints: { 768: { slidesPerView: 2 }, 1100: { slidesPerView: 3 } }
+    });
+  }
+
 })();
