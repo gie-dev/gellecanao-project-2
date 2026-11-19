@@ -76,7 +76,7 @@ img { max-width: 100%; }
 /* =========================================================
    2. Header / navigation
    ========================================================= */
-.site-header { background: #fff; border-bottom: 3px solid var(--gold); box-shadow: 0 2px 12px rgba(16,42,67,.08); z-index: 1030; }
+.site-header { background: white; border-bottom: 3px solid var(--gold); box-shadow: 0 2px 12px rgba(16,42,67,.08); z-index: 1030; }
 .site-header .navbar { padding: 8px 0; }
 .navbar-brand { gap: 10px; margin-right: 0; }
 .brand-text { font-family: var(--font-heading); font-weight: 700; font-size: 17px; line-height: 1.15; color: var(--navy); white-space: normal; }
